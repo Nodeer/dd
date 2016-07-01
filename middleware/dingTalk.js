@@ -35,19 +35,13 @@ function parse(req,res,next){
             var data = {
                 value: message.SuiteTicket,
                 expires: Number(message.TimeStamp) + TICKET_EXPIRES_IN
-            }
-            //保存ticket
-            fs.writeFile(this.suiteid + 'ticket.txt',JSON.stringify(data), callback);
-            if (err) {
-                return next(err);
-            } else {
-                res.reply();
-            }
+            };
+            res.reply();
         }else{
             req.dtMessage = message;
             next();
         }
-    };
+    }
 }
 
 function _jsonWrapper(timestamp, nonce, text) {
@@ -64,4 +58,4 @@ function _jsonWrapper(timestamp, nonce, text) {
 
 module.exports = {
     parse:parse
-}
+};

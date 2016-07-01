@@ -1,5 +1,5 @@
 module.exports = {
     token:'loganxie',
-    encodingAESKey:'far1vzwjcgdis4qu1m12yu227mvk2e3czhvzpiysqmo',
+    encodingAESKey:'rclyir39lry588hma2617arvbr2lve952urvd2u092y',
     suiteid:''
 };
