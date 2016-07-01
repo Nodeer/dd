@@ -3,6 +3,7 @@
  */
 
 var WXBizMsgCrypt = require('wechat-crypto');
+var config = require('../config/dingTalk');
 var newCrypt = new WXBizMsgCrypt(config.token, config.encodingAESKey, config.suiteid || 'suite4xxxxxxxxxxxxxxx');
 var TICKET_EXPIRES_IN = config.ticket_expires_in || 1000 * 60 * 20 //20分钟
 
