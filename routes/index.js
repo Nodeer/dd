@@ -5,7 +5,7 @@ router.all('/',function(req,res,next){
     res.send('logan dingtalk');
 });
 
-router.post('valid',dingTalkMiddleWare.parse,function(req,res,next){
+router.post('/valid',dingTalkMiddleWare.parse,function(req,res,next){
     res.send('dingtalk valid');
 });
 
